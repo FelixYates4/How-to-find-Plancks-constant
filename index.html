@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Calculate Planck's Constant using Excel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>How to Calculate Planck's Constant using Excel</h1>
+        <p>Learn how to perform data analysis in Excel to find Planck's constant with formulas, graphs, and error bars.</p>
+    </header>
+
+    <main>
+        <section id="setup">
+            <h2>1. Set up Your Data</h2>
+            <p>Input your experimental data into Excel. You will need frequency (in Hz) and stopping potential (in V). Create a table with these two columns.</p>
+        </section>
+
+        <section id="formulas">
+            <h2>2. Perform Calculations using Formulas</h2>
+            <p>Use Excel formulas to calculate values such as the slope of the graph. For example, use the SLOPE function to get the relationship between frequency and stopping potential.</p>
+            <pre><code>=SLOPE(B2:B10, A2:A10)</code></pre>
+            <p>This will calculate the slope, which is needed to derive Planck&#39;s constant.</p>
+        </section>
+
+        <section id="graph">
+            <h2>3. Plot the Graph with a Line of Best Fit</h2>
+            <p>To create a graph:</p>
+            <ol>
+                <li>Select your data (frequency and stopping potential).</li>
+                <li>Insert a scatter plot from the Excel toolbar.</li>
+                <li>Right-click on the plot and add a trendline (line of best fit).</li>
+                <li>Display the equation on the graph to find the slope.</li>
+            </ol>
+        </section>
+
+        <section id="errorbars">
+            <h2>4. Add Error Bars</h2>
+            <p>Click on your graph, then click on the Chart Elements icon. Select Error Bars and customize them according to your data.</p>
+        </section>
+
+        <section id="final-value">
+            <h2>5. Calculate Planck&#39;s Constant</h2>
+            <p>To find Planck&#39;s constant, multiply the slope of your line by the charge of an electron:</p>
+            <pre><code>h = slope * 1.602 x 10⁻¹⁹ C</code></pre>
+            <p>The result is Planck&#39;s constant, which you can compare with the known value of \(6.626 \times 10^{-34}\, \text{J}\cdot\text{s}\).</p>
+        </section>
+    </main>
+</body>
+</html>
