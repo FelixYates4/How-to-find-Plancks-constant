@@ -33,8 +33,7 @@
     <main>
         <section id="setup">
             <h2>1. Set up Your Data</h2>
-            <a href="test.html">To find the data</a>
-            <p>Input your experimental data into Excel. You will need LED wavelength (in nm), threshold voltage (in V), and frequency (in Hz). Create a table with these columns and convert the wavelength into meters by multiplying by 10<sup>-9</sup>.</p>
+            <p>Input  LED wavelength (in nm) and threshold voltage (in V) into two seperate columns. convert the wavelength into metres by multiplying by 10<sup>-9</sup>.</p>
         </section>
 
         <section id="formulas">
@@ -42,14 +41,14 @@
             <p>Use Excel formulas to calculate the frequency from the wavelength and the energy using the threshold voltage. For example, calculate the frequency with:</p>
             <pre><code>=3*10^8 / (A2*10^-9)</code></pre>
             <p>Then calculate energy with:</p>
-            <pre><code>=1.6*10^-19 * C2</code></pre>
+            <pre><code>=1.602*10^-19 * V<sub>th</sub></code></pre>
         </section>
 
         <section id="graph">
             <h2>3. Plot the Graph with a Line of Best Fit</h2>
             <p>To create a graph:</p>
             <ol>
-                <li>Select your data (frequency and energy).</li>
+                <li>Select your data (frequency(x) and energy(y)).</li>
                 <li>Insert a scatter plot from the Excel toolbar.</li>
                 <li>Right-click on the plot and add a trendline (line of best fit).</li>
                 <li>Display the equation on the graph to find the slope.</li>
@@ -63,7 +62,7 @@
 
         <section id="final-value">
             <h2>5. Calculate Planck&#39;s Constant</h2>
-            <p>The slope of the line of best fit represents Planck&#39;s constant. Compare it with the known value \( 6.626 \times 10^{-34} \, \text{J·s} \).</p>
+            <p>The slope of the line of best fit represents Planck&#39;s constant.</p>
         </section>
     </main>
 </body>
