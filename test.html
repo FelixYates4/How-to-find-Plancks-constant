@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measuring Planck's Constant Using LEDs</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #2980b9;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+        }
+        h1, h2 {
+            color: #2C3E50;
+        }
+        h3 {
+            color: #8E44AD;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #BDC3C7;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #F4F4F4;
+        }
+        .formula {
+            background-color: #F9E79F;
+            padding: 5px;
+            border: 1px solid #BDC3C7;
+            display: inline-block;
+        }
+        footer {
+            background: #2980b9;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Measuring Planck's Constant Using LEDs</h1>
+    <nav>
+        <a href="#method1">Method 1</a>
+        <a href="#method2">Method 2</a>
+        <a href="#summary">Summary</a>
+    </nav>
+</header>
+
+<main>
+    <section id="method1">
+        <h2>Method 1: Using Energy and Frequency</h2>
+        <p>The energy of a photon can be calculated using the formula:</p>
+        <div class="formula">E = h * f</div>
+
+        <h3>Experimental Setup:</h3>
+        <ol>
+            <li>Calculate the energy (E) for each LED using the threshold voltage (V) and the elementary charge (e):</li>
+            <div class="formula">E = e * V</div>
+            <li>Calculate the frequency (f) from the wavelength (λ):</li>
+            <div class="formula">f = c / λ</div>
+        </ol>
+
+        <h3>Graph:</h3>
+        <p>Plot energy (E) on the Y-axis against frequency (f) on the X-axis. The slope of the trendline will equal Planck's constant (h).</p>
+    </section>
+
+    <section id="method2">
+        <h2>Method 2: Using Threshold Voltage and Frequency</h2>
+        <p>This method uses the relationship between threshold voltage and photon energy:</p>
+        <div class="formula">e * V = h * f</div>
+
+        <h3>Experimental Setup:</h3>
+        <ol>
+            <li>Measure the threshold voltage (V) for each LED.</li>
+            <li>Calculate the frequency (f) from the wavelength.</li>
+        </ol>
+
+        <h3>Graph:</h3>
+        <p>Plot threshold voltage (V) on the Y-axis against frequency (f) on the X-axis. The slope of the trendline will provide <strong>h / e</strong>. To find Planck's constant:</p>
+        <div class="formula">h = m * e</div>
+        where m is the slope of the line.
+    </section>
+
+    <section id="summary">
+        <h2>Summary</h2>
+        <p>Both methods yield the value of Planck's constant (h) but rely on different relationships:</p>
+        <ul>
+            <li><strong>Energy Method:</strong> Focuses on the energy of emitted photons.</li>
+            <li><strong>Threshold Voltage Method:</strong> Uses the voltage needed to emit light from the LED.</li>
+        </ul>
+        <p>Using either method should yield consistent values for Planck's constant, provided that measurements and calculations are accurate.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Measuring Planck's Constant Experiment</p>
+</footer>
+
+</body>
+</html>
